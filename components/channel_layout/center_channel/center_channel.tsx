@@ -81,7 +81,7 @@ export default class CenterChannel extends React.PureComponent<Props, State> {
                             component={ChannelIdentifierRouter}
                         />
                          <Route
-                            path={['/:team/:path(sections|messages)/:sectionName/:sectionId']}
+                            path={['/:team/:path(sections)']}
                             component={SectionView}
                         />
                         <Redirect to={lastChannelPath}/>
